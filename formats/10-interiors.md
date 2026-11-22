@@ -30,6 +30,27 @@ entities show up as unparented HD entities near (0, 0, 0).
 
 Room `e69e4c84` is `limbo` (room 0, outside), as in GTA V.
 
+**Room flags** (inferred). The room `flags` field is a bitfield. GTA V uses
+ten bits; whether GTA 6 keeps the same layout is not confirmed against real
+room values yet, so treat this as a starting point to check:
+
+| Bit | GTA V meaning |
+|---|---|
+| `0x001` | freeze vehicles |
+| `0x002` | freeze peds |
+| `0x004` | no directional light |
+| `0x008` | no exterior lights |
+| `0x010` | force freeze |
+| `0x020` | reduce cars |
+| `0x040` | reduce peds |
+| `0x080` | force directional light on |
+| `0x100` | don't render exterior |
+| `0x200` | mirror potentially visible |
+
+These are the public GTA V MLO room-flag meanings; no game files are
+involved. A quick check is whether observed `flags` values stay within
+`0x3ff` and whether rooms known to dim exterior light set `0x004` / `0x008`.
+
 So every map file has a **space**:
 
 | Space | Files | Entities |
