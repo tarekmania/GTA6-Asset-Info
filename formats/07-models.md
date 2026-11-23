@@ -483,7 +483,7 @@ per-layer vec4s are in [§12](12-materials.md).
   - Link chain: configuration part `0caef606` → list `61e1e572` →
     `da592d57` {`1ff6a884` pattern names, `dd466dfe` another name list,
     probably lamp sets} → pattern.
-  - Lamp set `865400aa` {list `804fdca7` of `ba860a07`}: `079baba7` u64 whose
+  - Lamp set `865400aa` {list `804fdca7` of `ba860a07`}: `079baba7` (`attachBone`) u64 whose
     low 32 bits are the bone name hash, `066532dd` light archetype name hash,
     plus an archetype u64 (name hash in the high half, a second hash in the
     low half). Archetype names found by guessing: `red`, `amber`,

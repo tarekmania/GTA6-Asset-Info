@@ -110,7 +110,7 @@ a separate PSO ([§17](17-other.md#vehicle-handling)).
     7,908 occurrences across packs, 1,611 in `data.rpf`).
   - The data hashes are defined in a **companion 0x7a resource** per
     vehicle: 41 × `b07176ab` (one per `44cc9d8c`; each with `09bd7c2c`, 32 ×
-    `fe88b23d` {`c6a46bcd` hash, floats}, three lists of `825d57ab`, a list
+    `fe88b23d` {`c6a46bcd` (`componentName`) hash, floats}, three lists of `825d57ab`, a list
     `fc07418c` and two 64-bit values); three tables of exactly 256 entries
     (`f5908771`: six hashes and three 16-byte fields that look like half
     floats; `b5feb11f`; `3d9aef8b`); 3,936 `825d57ab` (41 × 96), 1,312
@@ -301,7 +301,7 @@ a separate PSO ([§17](17-other.md#vehicle-handling)).
     vehicle packs (4 plate strings in the one vehicle checked).
   - **Binding** `501ff112` (medium-high): `662d9b79` group, `178cc382`
     channel, `1470edc0` priority and six flags, of which `c8d27281` =
-    colour and `7a84e7bf` = surface (`75939b79`, `db4bdec4`, `e2e82803`,
+    colour and `7a84e7bf` = surface (`75939b79`, `db4bdec4` (`paintType`), `e2e82803` (`windowTint`),
     `a1f60489` not understood). **Assignment** `b94308f5`: `ca2065a9`
     channel, `2c89a8d2` colour record (`f1379639`), `7a84e7bf` surface
     record (`9e4de959`), plus `a8167b82`, `b2e15619`, `43394f02`. Applying
