@@ -565,7 +565,7 @@ per-layer vec4s are in [§12](12-materials.md).
       light extension `27922c43`) and holds named light sets `76402c3c`
       {name hash, list `f54b227b` of light attribute records}.
     - Each light: colour u8[3] `5bdc13e3` (two more u8[3] fields,
-      `8822fbce` and `3a615dea`, are `ffffff` here), intensity float
+      `8822fbce` (`volOuterColour`) and `3a615dea`, are `ffffff` here), intensity float
       `efcd993d`, and a flash block `e9476573` {type u8 `5b92fa4b`, speed
       `699dd4d9`, offset}, the same fields as the pattern steps above.
     - All 55 light archetypes the vehicles use are in one resource (805

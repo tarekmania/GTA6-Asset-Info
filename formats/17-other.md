@@ -632,8 +632,8 @@ class `0x24749343`, whose instance stride is `0x18`:
 
 | Offset | Type | Meaning |
 |---|---|---|
-| `+0x08` | `u32` | Dictionary/set hash; descriptor field hash `0x25de16df`, type `0x4a` |
-| `+0x0c` | `u32` | Clip stem hash; descriptor field hash `0x24fc8f24`, type `0x4a` |
+| `+0x08` | `u32` | Dictionary/set hash; descriptor field hash `0x25de16df` (`clipDictionaryName`), type `0x4a` |
+| `+0x0c` | `u32` | Clip stem hash; descriptor field hash `0x24fc8f24` (`clipName`), type `0x4a` |
 | `+0x10` | `u32` | Flag; observed 695,621 times as 1 and 10,644 times as 0 |
 | `+0x14` | `u32` | Observed zero |
 

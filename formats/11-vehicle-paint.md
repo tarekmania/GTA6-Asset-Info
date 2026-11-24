@@ -645,8 +645,8 @@ Liveries are **brand variations** that place stickers on named layouts.
   (`3274d53f`) of groups, struct `b0dd20cb` {`Name`, list `c19c0de4` of
   layouts}. A layout, struct `e2d9c73a`, has `Name`, `Location`,
   `Rotation` (degrees), a position (`26bab388`, `79dd59cc`), a size
-  (`8eed562c`, `9d2ff2b1`; it acts as a scale, so a larger number is a
-  smaller sticker), `20b757b6` (a list of 1–6 sticker zones), `041ebd1d`
+  (`8eed562c` `ScaleY`, `9d2ff2b1` `ScaleX`; it acts as a scale, so a larger number is a
+  smaller sticker), `20b757b6` `Indices` (a list of 1–6 sticker zones), `041ebd1d` `AspectRatio`
   (aspect class 0, 1, 2 = square, 2:1, 4:1, equal to the sticker record's
   `aspectRatio`), `4d763aa5` (UV mode: 1 first UV set, 3 second, 4 third)
   and `80c88a97`, `9f8b8007` (unknown). A sticker entry's `b13f2c2f` is the

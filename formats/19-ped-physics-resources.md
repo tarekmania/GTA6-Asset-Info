@@ -374,7 +374,7 @@ material presets**, struct `f795e8ba` (the struct the head skins use,
 | Field | Meaning | Confidence |
 |---|---|---|
 | `65121749` | preset name hash; a part's first preset is joaat(drawable name), the others are variations (names unknown) | confirmed |
-| `b53667be` | slot: `ac82ad6b` fullbody, `ea24b45e` eyes, `378ad10c` head, `96edae5c` teeth; `bf483c65` (fur body), `343822c2` (fur head), `80c8c1af` (horn) unresolved | confirmed |
+| `b53667be` (probably `Category`) | slot: `ac82ad6b` fullbody, `ea24b45e` eyes, `378ad10c` head, `96edae5c` teeth; `bf483c65` (fur body), `343822c2` (fur head), `80c8c1af` (horn) unresolved | confirmed |
 | `c4d75d79`, `f4fb3dec`, `ab5d2a85` | three u8 tint values; 255/255/255 or 0/0/0 = untinted; **palette rows of tints 0, 1, 2** on clothing items, 255 = off ([§12](12-materials.md#material-presets-peds)) | high on clothing; inferred here |
 | `5ecf9331` | tint palette hash (32-bit): 7 values over 708 presets (`fcef23e3` 535, `c1713805` 99, `f12638b9` 34, `fd043742` 29, `8b21128f` 6, `d164052e` 4, `05317603` 1). `05317603` is `ped_tint_vstation_generic` ([§12](12-materials.md#material-presets-peds)); the others are in no texture store or name list | partly resolved (2026-11-23) |
 | `ebacf18c[]` | parameters; the "base" one (`3eaddcd7` = `44e21c90`) holds struct `147fdab5`: `ead733fc` albedo (64-bit store hash), `d689b17f` normal, `41acf8eb` and `9d1000d8` (64-bit) | confirmed |
