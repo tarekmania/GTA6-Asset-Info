@@ -689,7 +689,7 @@ field `aadeb53e` and `c897af02` are still unnamed.
 ### Ped model table
 
 (2026-11-23.) One PSO in the packs holds 2,714 records of struct
-`eb66d086`, one per ped model, `Name` = joaat of the model name.
+`eb66d086` (`CPedModelInfo__InitData`), one per ped model, `Name` = joaat of the model name.
 
 | Field | Contents | Confidence |
 |---|---|---|
